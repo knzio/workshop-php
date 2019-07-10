@@ -1,4 +1,4 @@
-FROM php-fpm-base
+FROM knzio/workshop-php:7.2-dev
 
 RUN pecl install xdebug && docker-php-ext-enable xdebug
 RUN apt-get update \
